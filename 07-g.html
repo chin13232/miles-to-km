@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body style="background-color: black;">
+    <script>
+      function convertLength(length, from, to) {
+        if (from === 'miles' && to === 'km') {
+          return (`${length * 1.6} km`);
+        } else if (from === to) {
+          return (`error`);
+        } else {
+          return (`${length * 0.6} km`);
+        }
+      }
+
+      console.log(convertLength(10, 'km', 'miles'));
+      console.log(convertLength(10, 'miles', 'km'));
+    </script>
+  </body>
+</html>
